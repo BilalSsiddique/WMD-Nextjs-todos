@@ -55,7 +55,7 @@ const InputModel = () => {
     }
 
     return (
-        <div className={styles.shadow}>
+        <div className={styles.shadow} >
             <div className={styles.model}>
                 <div className={styles.flex}>
                     <h2 className={ph.className}>Add Todo</h2>

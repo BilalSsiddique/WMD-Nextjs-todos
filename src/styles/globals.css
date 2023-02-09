@@ -12,11 +12,14 @@ body {
 
 body {
   color: black;
-  background: white;
+  /* background: white; */
   box-shadow: 0px 2px 10px rgba(20, 21, 33, 0.18);
+  /* height: 100vh; */
+  background-color: white;
+}
+.MainContainer{
   height: 100vh;
 }
-
 a {
   color: inherit;
   text-decoration: none;

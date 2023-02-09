@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background: linear-gradient(to top right, #ffffff 0%, #1d96db 100%);
+  background: linear-gradient(to top right, #ffffff 10%, #5ca8ff 80%);
   box-shadow: 0px 2px 10px rgba(20, 21, 33, 0.18);
   display: flex;
   justify-content: space-between;
@@ -33,13 +33,22 @@
 }
 
 .model {
-  background: linear-gradient(to top right, #ffffff 0%, #1d96db 100%);
+  background: linear-gradient(to top right, #ffffff 10%, #5ca8ff 80%);
     box-shadow: 0px 4px 5px 0px rgba(20, 21, 33, 0.18);
   width: 500px;
   height: auto;
   border-radius: 12px;
   padding: 20px;
   position: absolute;
+  z-index: 100;
+  
+}
+
+.modelbgblur{
+  /* background-color: black; */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
 }
 
 .icon {
@@ -142,7 +151,7 @@
   margin: 0 auto !important;
   display: flex;
   flex-direction: row !important;
-    background: linear-gradient(to top right, #ffffff 0%, #75c8f8 100%);
+    background: linear-gradient(to top right, #ffffff 10%, #5ca8ff 80%);
     box-shadow: 0px 2px 10px rgba(20, 21, 33, 0.18);
 
   /* box-shadow: 23px 23px 24px #bebebe, -23px -23px 24px #ffffff; */

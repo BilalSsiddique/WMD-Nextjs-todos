@@ -1,14 +1,16 @@
 import Head from 'next/head'
+
 import styles from '@/styles/Home.module.css'
 import Header from '@/Components/Header'
 import { useState } from 'react'
 import Todos from '@/Components/Todos'
-
+import { useContext } from 'react';
+import { Context } from '../Context/ContextApi';
 
 
 
 export default function Home() {
-
+  const {toggle } = useContext(Context)
   return (
     <>
       <Head>
@@ -17,10 +19,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       </Head>
-      <main className={styles.MainContainer}>
+      <body >
         <Header />
+      <main className={[toggle===true ?  styles.modelbgblur : ''].join(" ")}  >
+        
         <Todos />
       </main>
+
+      </body>
     </>
   )
 }

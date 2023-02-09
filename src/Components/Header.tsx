@@ -12,14 +12,15 @@ const Header = () => {
 
   const ModelHandler = () => {
     setToogle(!toggle)
+    
   }
   return (
     <>
       <div className={styles.header}>
         <h1 className={ph.className}>TODO APP</h1>
-        <button className={[styles.addtodobtn,ph.className ].join(" ")} onClick={ModelHandler}>Add Todo</button>
+        <button className={[styles.addtodobtn,ph.className ].join(" ")}   onClick={ModelHandler}>Add Todo</button>
       </div>
-      {toggle && <InputModel/>}
+      {toggle && <InputModel /> }
     </>
   )
 }
