@@ -62,7 +62,7 @@ const InputModel = () => {
                     <BiX onClick={HandleToogler} className={styles.icon} size={40} />
                 </div>
                 <div className={styles.form}>
-                    <h3 className={[styles.h3,ph.className].join(" ")}>Title</h3>
+                    <h3 className={[styles.h3,ph.className].join(" ")}>Task</h3>
                     <input className={[styles.input,ph.className].join(" ")} type='text' name='title' value={input.title} onChange={inputHandler} placeholder='Add a task' />
                     {/* <h3 className={styles.h3}>Description</h3>
                     <textarea name='description' value={input.description} className={styles.input} onChange={inputHandler} placeholder='Add your Description ' />
