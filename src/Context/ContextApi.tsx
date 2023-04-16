@@ -2,33 +2,31 @@ import React, { createContext, useState } from "react";
 
 
 
-export const Context = createContext<any>('');
+export const Context = createContext<any>("");
 
 export const AppContext = (props: any) => {
+  const [toggle, setToogle] = useState(false);
+  const [arr, setArr] = useState<any>([]);
+  const [input, setInput] = useState<any>({
+    id: "",
+    title: "",
+    date: "",
+    completed: "",
+  });
 
+  return (
+    <Context.Provider
+      value={{
+        setToogle,
+        toggle,
+        arr,
+        setArr,
+        input,
+        setInput,
 
-    const [toggle, setToogle] = useState(false)
-    const [arr, setArr] = useState<any>([])
-    const [input, setInput] = useState<any>({
-        id: '',
-        title: '',
-        description: '',
-        date: '',
-        completed: ''
-    });
-
-    return (
-        <Context.Provider
-            value={{
-                setToogle,
-                toggle,
-                arr,
-                setArr,
-                input,
-                setInput
-            }}
-        >
-            {props.children}
-        </Context.Provider>
-    );
+      }}
+    >
+      {props.children}
+    </Context.Provider>
+  );
 };
